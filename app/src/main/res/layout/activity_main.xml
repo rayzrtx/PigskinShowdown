@@ -4,13 +4,17 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="#cc5500"
     tools:context="com.example.android.pigskinshowdown.MainActivity">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:text="Are you ready for some football??!!" />
+        android:text="Are you ready for some football??!!"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:textColor="#000"/>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -21,33 +25,48 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="TEXAS" />
+            android:text="TEXAS"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="24dp"
+            android:textSize="28sp"
+            android:textColor="#fff"/>
 
         <TextView
             android:id="@+id/texas_score_view"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginRight="30dp"
-            android:text="0" />
+            android:layout_marginRight="24dp"
+            android:text="0"
+            android:layout_marginTop="8dp"
+            android:textSize="28sp"
+            android:textColor="#fff"/>
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:layout_marginBottom="8dp">
 
         <TextView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="THE WORLD" />
+            android:text="THE WORLD"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="24dp"
+            android:textSize="28sp"
+            android:textColor="#fff"/>
 
         <TextView
             android:id="@+id/world_score_view"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginRight="30dp"
-            android:text="0" />
+            android:layout_marginRight="24dp"
+            android:text="0"
+            android:layout_marginTop="8dp"
+            android:textSize="28sp"
+            android:textColor="#fff"/>
     </LinearLayout>
 
 
@@ -60,62 +79,112 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:layout_marginTop="12dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Texas"
+                android:gravity="center"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:layout_marginBottom="8dp"
+                android:textColor="#000"/>
 
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Touchdown!"
-                android:onClick="addSixPointsTexas"/>
+                android:onClick="addSixPointsTexas"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:layout_marginBottom="8dp" />
 
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Field Goal"
-                android:onClick="addThreePointsTexas"/>
+                android:onClick="addThreePointsTexas"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:layout_marginBottom="8dp" />
 
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Extra Point"
-                android:onClick="addOnePointTexas"/>
+                android:onClick="addOnePointTexas"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:layout_marginBottom="8dp" />
 
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="2-pt Conversion or safety"
-                android:onClick="addTwoPointsTexas"/>
+                android:onClick="addTwoPointsTexas"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp" />
         </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@android:color/black"
+            android:layout_marginTop="16dp"/>
 
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:layout_marginTop="12dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="World"
+                android:gravity="center"
+                android:layout_marginRight="24dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginBottom="8dp"
+                android:textColor="#000"/>
 
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="TOUCHDOWN!"
-                android:onClick="addSixPointsWorld"/>
+                android:onClick="addSixPointsWorld"
+                android:layout_marginRight="24dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginBottom="8dp"/>
 
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Field Goal"
-                android:onClick="addThreePointsWorld"/>
+                android:onClick="addThreePointsWorld"
+                android:layout_marginRight="24dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginBottom="8dp"/>
 
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Extra Point"
-                android:onClick="addOnePointWorld"/>
+                android:onClick="addOnePointWorld"
+                android:layout_marginRight="24dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginBottom="8dp"/>
 
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="2-pt Conversion or Safety"
-                android:onClick="addTwoPointsWorld"/>
+                android:onClick="addTwoPointsWorld"
+                android:layout_marginRight="24dp"
+                android:layout_marginLeft="24dp"/>
 
         </LinearLayout>
 
@@ -125,6 +194,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Reset Score"
-        android:onClick="resetScoreToZero"/>
+        android:onClick="resetScoreToZero"
+        android:layout_margin="24dp"/>
 
 </LinearLayout>
