@@ -65,22 +65,26 @@
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Touchdown!" />
+                android:text="Touchdown!"
+                android:onClick="addSixPointsTexas"/>
 
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Field Goal" />
+                android:text="Field Goal"
+                android:onClick="addThreePointsTexas"/>
 
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Extra Point" />
+                android:text="Extra Point"
+                android:onClick="addOnePointTexas"/>
 
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="2-pt Conversion or safety" />
+                android:text="2-pt Conversion or safety"
+                android:onClick="addTwoPointsTexas"/>
         </LinearLayout>
 
         <LinearLayout
@@ -92,22 +96,26 @@
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="TOUCHDOWN!" />
+                android:text="TOUCHDOWN!"
+                android:onClick="addSixPointsWorld"/>
 
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Field Goal" />
+                android:text="Field Goal"
+                android:onClick="addThreePointsWorld"/>
 
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Extra Point" />
+                android:text="Extra Point"
+                android:onClick="addOnePointWorld"/>
 
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="2-pt Conversion or Safety" />
+                android:text="2-pt Conversion or Safety"
+                android:onClick="addTwoPointsWorld"/>
 
         </LinearLayout>
 
@@ -117,6 +125,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Reset Score"
-        />
+        android:onClick="resetScoreToZero"/>
 
 </LinearLayout>
